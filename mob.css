@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.menu {
+   width: 100%;
+   height: 60px;
+   background-color: burlywood;
+}
+.conteudo {
+    width: 100%;
+    background-color: cadetblue;
+}
+.rodape {
+    background-color: cadetblue;
+    width: 100%;
+    text-align: center;
+}
+.info-cinema {
+    width: 100%;
+    background-color: darkgoldenrod;
+}
+.info-filme {
+    width: 100%;
+    background-color: rgb(231, 188, 79);
+}
+.info-filme-retro {
+    width: 100%;
+    background-color: darkgoldenrod;
+}
+.info-destaque {
+    width: 100%;
+    background-color: rgb(231, 188, 79);
+}
+.img-estilo {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        height: 120px;
+        background-color: fuchsia;
+    }
+    .conteudo {
+        display: flex;
+    }
+
+}
+@media screen and (min-width: 1028px) {
+    .menu {
+        height: 200px;
+        background-color: black;
+    }
+    .conteudo {
+        display: grid;
+    }
+}
