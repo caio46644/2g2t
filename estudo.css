@@ -14,12 +14,12 @@
 }
 .roxa {
     height: 40vh;
-    background: rgb(168, 46, 168);
+    background: rgb(46, 48, 168);
     grid-area: roxa;
 }
 .laranja {
     height: 80vh;
-    background: orange;
+    background: rgb(0, 17, 255);
     grid-area: laranja;
 }
 .cinza {
