@@ -2,63 +2,58 @@
     padding: 0;
     margin: 0;
 }
-:root{
-    --cor-fundo: rgb(7,2,255);
-    --cor-fonte: rgb(255,230,0);
-    --cor-hover: rgb(89,87,219);
-
+:root {
+    --cor-fundo: rgb(255, 102, 0);
+    --cor-fonte: rgb(58, 128, 0);
+    --cor-hover: rgb(0, 174, 255);
 }
-a{
+a {
     text-decoration: none;
 }
-ul {    width: 100%;
-    height: 60px;
+ul {
+    list-style: none;
 }
 
 .header {
-  background-color:var(--cor-fundo);
-  position: sticky;
-  top: 0;
-  width: 100%;
+    
+    background-color: var(--cor-fundo);
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
-.logo{
+.logo {
     display: inline;
-    background: var(--cor-fundo);
-
+    background-color: var(--cor-fundo);
 }
-.nav{
+.nav {
     width: 100%;
     height: 100%;
     position: fixed;
-    background: var(--cor-fundo);
-    overflow: hidden;
+    background-color: var(--cor-fundo);
 }
 .menu a {
     display: block;
     padding: 30px;
-    color: var(--cor-fonte);   
+    color: var(--cor-fonte);
 }
 .menu a:hover{
- background-color: var(--cor-hover);
-
+    background-color: var(--cor-hover);
 }
-.nav{
+.nav {
     max-height: 0;
     transition: max-height .5s ease-out;
-
 }
-.hamb{
+.hamb {
     cursor: pointer;
-    float:right;
+    float: right;
     padding: 35px 20px;
-
 }
-.hamb-line{
+.hamb-line {
     background-color: var(--cor-fonte);
     display: block;
     height: 2px;
-    position:relative;
-    width: 24px;
+    position: relative;
+    width: 23px;
 }
 .hamb-line::before,
 .hamb-line::after{
@@ -69,38 +64,36 @@ ul {    width: 100%;
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
+
 }
-.hamb-line::before{
-    top: 5px    ;
+.hamb-line::before {
+    top: 5px;
 }
-.hamb-line::after{
+.hamb-line::after {
     top: -5px;
 }
-.side-menu{
+.side-menu {
     display: none;
 }
-.side-menu:checked ~ nav {
+
+.side-menu:checked  ~ nav {
     max-height: 100%;
 }
-.side-menu:checked ~ .hamb .hamb-line {
+.side-menu:checked ~ .hamb-line {
     background: transparent;
 }
-
-.side-menu:checked ~.hamb .hamb-line::before {
-    transform:rotate(-45deg);
-    top: 0; 
-}
-
-.logo {
-    width: 100px;
-}
-
-.side-menu:checked ~.hamb .hamb-line::after {
-    transform:rotate(45deg);
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
     top: 0;
 }
 
-    
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+#logo {
+    width: 100px;
+}
 
 .conteudo {
     width: 100%;

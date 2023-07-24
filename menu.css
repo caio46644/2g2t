@@ -1,15 +1,16 @@
 :root {
-    --fundo: red;
+    --fundo: rgb(209, 12, 12);
     --fonte: #fff;
-    --hover: rgb(255, 166, 0);
+    --hover: rgb(255, 153, 0);
+
 }
 a {
     text-decoration: none;
 }
-ul{
+ul {
     list-style: none;
 }
-.header {
+header {
     background-color: var(--fundo);
     position: sticky;
     top: 0;
@@ -32,6 +33,6 @@ ul{
     padding: 30px;
     color: var(--fonte);
 }
-.mrnu a:hover {
+menu a:hover {
     background-color: var(--hover);
 }
